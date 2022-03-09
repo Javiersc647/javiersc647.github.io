@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+.navegacion{
+    background-color: hsl(0, 0%, 6%);
+    height: 80px;
+    width: 100%; 
+}
+/*Logo*/
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 40px;
+}   
+/*menu*/
+.menu{
+    float:right;
+    margin-right: 125px;
+    padding: 10px;
+}
+.menu ul{
+    float: right;
+    margin-right: 20px;
+    
+}
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+.menu li a{
+    display: block; padding: 15px 20px;
+    color: hsl(0, 0%, 100%); 
+    font-size: 18px;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;  
+}
+.menu li a:hover{
+    color: hsl(131, 100%, 52%);
+    transition: all .5s;
+    
+}
+/*submenu*/
+
+.submenu{
+    position: absolute;
+    background: hsl(0, 0%, 6%);
+    width: 120%;
+    display: none;
+    
+}
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Open Sans', sans-serif;
+}
+.menu li:hover .submenu{
+    display: block;
+}
+/*Boton resposive que solo funcionará cuando se use una resolución de móvil*/
+.checkbtn{
+    font-size: 30px;
+    color: hsl(0, 0%, 100%);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.titulo{
+    margin: 2rem 10rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    color: hsl(0, 0%, 0%);
+    font-style: italic;
+}
+.grid-container{
+    display: grid;
+    background-color: hsl(0, 0%, 100%);
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 2 auto;
+    justify-content: space-between;
+    margin: 2.5rem 10rem;  
+    margin-bottom: 4rem; 
+}
+.grid-container div{
+    padding: 30px;
+    
+    
+}
+.imagen{
+    width: auto;
+    height: 225px;
+}
+.gafas{
+    font-size: 20px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: hsl(0, 0%, 0%);
+
+}
+.precio{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 0%);
+}
+footer{
+    background-color: hsl(0, 0%, 6%);
+    height: 400px;
+    width: 100%; 
+}
