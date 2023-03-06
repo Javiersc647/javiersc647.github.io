@@ -1,0 +1,235 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+}
+.navegacion {
+  background-color: hsl(0, 100%, 100%);
+  height: 80px;
+  width: 100%;
+}
+/*Logo*/
+.enlace {
+  position: absolute;
+  padding: 20px 50px;
+}
+.logo {
+  height: 30px;
+  float: left;
+  margin-left: 1.8em;
+}
+/*menu*/
+.menu {
+  float: right;
+  margin-left: 12em;
+  padding: 10px;
+}
+.menu ul {
+  float: left;
+  margin-right: 20px;
+}
+.menu > li {
+  position: relative;
+  display: inline-block;
+}
+.menu li a {
+  display: block;
+  padding: 15px 20px;
+  color: hsl(0, 0%, 23%);
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+.menu li a:hover {
+  color: hsl(0, 100%, 0%);
+  transition: all 0.5s;
+}
+/*submenu*/
+
+.submenu {
+  position: absolute;
+  background: hsl(0, 1%, 83%);
+  width: 120%;
+  display: none;
+}
+.submenu li a {
+  display: block;
+  padding: 15px;
+  color: hsl(0, 0%, 54%);
+  font-family: "Poppins", sans-serif;
+}
+.menu li:hover .submenu {
+  display: block;
+}
+
+/*Imagen Coche Audi Carrusel*/
+
+.audi-carrusel {
+  width: 100%;
+  height: 45em;
+  object-fit: cover;
+}
+
+/*Contenedor principal*/
+
+.contenedor-principal {
+  justify-content: center;
+}
+
+.contendor {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+.centrado {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  transform: translate(-50%, 50%);
+  color: hsl(0, 0%, 100%);
+  font-size: 3em;
+  font-family: "Inter", sans-serif;
+}
+.centrado2 {
+  position: absolute;
+  top: 32%;
+  left: 32%;
+  transform: translate(-50%, 50%);
+  color: hsl(0, 0%, 91%);
+  font-size: 1.2em;
+  font-family: "Inter", sans-serif;
+}
+
+.modelo-coches {
+  height: 15em;
+  margin-top: 1em;
+  margin-left: 1.5em;
+}
+.texto-modelo-coches {
+  font-family: "Golos Text", sans-serif;
+  font-size: 1.2em;
+  margin-left: 2em;
+  text-decoration: underline;
+}
+.coche {
+  display: flex;
+  text-align: center;
+
+  width: 90%;
+  margin: auto;
+}
+.contenido {
+  padding: 10px;
+  width: 30%;
+  background-color: hsl(0, 0%, 100%);
+  margin: 10px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 14px;
+}
+.imagen {
+  width: auto;
+  height: 85px;
+}
+.coche {
+  font-size: 1.3em;
+  text-align: center;
+  color: hsl(0, 0%, 0%);
+  text-align: center;
+  justify-content: center;
+  font-family: "Golos Text", sans-serif;
+}
+
+.audi-q8-carrusel2 {
+  width: 100%;
+  height: 65em;
+  object-fit: cover;
+}
+.contendor2 {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+.centrado3 {
+  position: absolute;
+  top: 90%;
+  left: 35%;
+  transform: translate(-50%, 100%);
+  color: hsl(0, 0%, 24%);
+  font-size: 3em;
+  font-family: "Inter", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  margin-top: 2em;
+  padding-top: 3em;
+  padding-left: 1.5em;
+  padding-right: 1em;
+  padding-bottom: 3em;
+}
+
+.plan-moves {
+  width: 100%;
+  height: 60em;
+  margin-top: 2em;
+}
+.texto-plan-moves {
+  font-size: 2.8em;
+  justify-content: center;
+  text-align: center;
+  text-decoration: bold;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.texto-plan-moves2 {
+  font-family: "Titillium Web", sans-serif;
+  color: hsl(0, 1%, 15%);
+  font-size: 1.2em;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+/*movil*/
+@media only screen and (min-width: 150px) and (max-width: 600px) {
+}
+/*escritorio*/
+@media only screen and (min-width: 1200px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header header header header header"
+      "menu menu menu menu menu menu"
+      "aside aside main main right right"
+      "footer footer footer footer footer footer";
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+  }
+}
+/*tablet*/
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header header header header header"
+      "menu menu menu menu menu menu"
+      "aside aside aside main main main"
+      "footer footer footer footer footer footer";
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+  }
+
+  .grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .item3 {
+    height: 350px;
+  }
+
+  .item4 {
+    height: 350px;
+  }
+}
