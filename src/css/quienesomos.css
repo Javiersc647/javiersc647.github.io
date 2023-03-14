@@ -1,0 +1,64 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+  }
+  .navegacion {
+    background-color: hsl(0, 100%, 100%);
+    height: 80px;
+    width: 100%;
+  }
+  /*Logo*/
+  .enlace {
+    position: absolute;
+    padding: 20px 50px;
+  }
+  .logo {
+    height: 30px;
+    float: left;
+    margin-left: 1.8em;
+  }
+  /*menu*/
+  .menu {
+    float: right;
+    margin-left: 12em;
+    padding: 10px;
+  }
+  .menu ul {
+    float: left;
+    margin-right: 20px;
+  }
+  .menu > li {
+    position: relative;
+    display: inline-block;
+  }
+  .menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: hsl(0, 0%, 23%);
+    font-size: 1em;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+  }
+  .menu li a:hover {
+    color: hsl(0, 100%, 0%);
+    transition: all 0.5s;
+  }
+  /*submenu*/
+  
+  .submenu {
+    position: absolute;
+    background: hsl(0, 1%, 83%);
+    width: 120%;
+    display: none;
+  }
+  .submenu li a {
+    display: block;
+    padding: 15px;
+    color: hsl(0, 0%, 54%);
+    font-family: "Poppins", sans-serif;
+  }
+  .menu li:hover .submenu {
+    display: block;
+  }
